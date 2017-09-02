@@ -1,29 +1,27 @@
-
-# start /MIN "" pythonw main.py
-
 import Tkinter as tk
 from Tkinter import *
 import time
 
-def countdown(count,label,root):
-    label['text'] =" Take a break for : " + str(count) +" sec"
+
+def countdown(count, label, root):
+    label['text'] = " Take a break for : " + str(count) + " sec"
 
     if count > 0:
-        root.after(1000, countdown, count-1, label, root)
+        root.after(1000, countdown, count - 1, label, root)
     else:
         root.destroy()
 
-def start():
 
+def start():
     root = tk.Tk()
 
     root.lift()
     root.resizable(0, 0)
 
     root.title("Message...!!")
-    label = tk.Label(root,font=("Helvetica", 16),pady=25)
+    label = tk.Label(root, font=("Helvetica", 16), pady=25)
     label.pack()
-    Button(root, text="CANCEL",font=("Helvetica", 16), command=root.destroy).pack()
+    Button(root, text="CANCEL", font=("Helvetica", 16), command=root.destroy).pack()
 
     countdown(20, label, root)
 
@@ -33,7 +31,7 @@ def start():
 
     root.mainloop()
 
+
 while True:
     start()
     time.sleep(1200)
-
