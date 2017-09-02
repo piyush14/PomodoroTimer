@@ -5,7 +5,7 @@ Simple timer app to **take a break every 20 minutes for 20 seconds**
 
 ## Usage
 
-1. Download installer from [Pomodoro Timer Installer](#)
+1. Download installer from [Pomodoro Timer Installer](https://drive.google.com/uc?export=download&id=0B9ifgXyo5JFPT3p3cHlMZEM4UTA)
 2. Install it on system and start the app
 3. Get to work :computer: , Pomodoro Timer will take care fo the rest :sunglasses:
 
