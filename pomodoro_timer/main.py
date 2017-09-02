@@ -51,9 +51,8 @@ def show_break_dialog():
     root.mainloop()
 
 
-if __name__ == '__main__':
-    while True:
-        # show take break dialog
-        show_break_dialog()
-        # wait for 20 minutes
-        time.sleep(WAIT_TIME)
+while True:
+    # show take break dialog
+    show_break_dialog()
+    # wait for 20 minutes
+    time.sleep(WAIT_TIME)
