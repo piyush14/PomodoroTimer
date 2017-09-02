@@ -2,8 +2,24 @@ import Tkinter as tk
 from Tkinter import *
 import time
 
+# define break and wait timings in seconds
+BREAK_TIME = 20
+WAIT_TIME = 1200
+
+BREAK_TIME_TEST = 5
+WAIT_TIME_TEST = 10
+
+# dialog constants
+break_dialog_title = "Break Time.."
+
 
 def countdown(count, label, root):
+    """
+    Countdown for given seconds
+    :param count: counter for break
+    :param label: label for window
+    :param root: Tk root
+    """
     label['text'] = " Take a break for : " + str(count) + " sec"
 
     if count > 0:
@@ -12,19 +28,21 @@ def countdown(count, label, root):
         root.destroy()
 
 
-def start():
+def show_break_dialog():
+    """
+    Show break dialog with message
+    """
     root = tk.Tk()
-
     root.lift()
     root.attributes('-topmost', True)
     root.resizable(0, 0)
 
-    root.title("Message...!!")
+    root.title(break_dialog_title)
     label = tk.Label(root, font=("Helvetica", 16), pady=25)
     label.pack()
     Button(root, text="CANCEL", font=("Helvetica", 16), command=root.destroy).pack()
 
-    countdown(20, label, root)
+    countdown(BREAK_TIME, label, root)
 
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
@@ -33,6 +51,9 @@ def start():
     root.mainloop()
 
 
-while True:
-    start()
-    time.sleep(1200)
+if __name__ == '__main__':
+    while True:
+        # show take break dialog
+        show_break_dialog()
+        # wait for 20 minutes
+        time.sleep(WAIT_TIME)
