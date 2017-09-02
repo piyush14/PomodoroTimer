@@ -16,6 +16,7 @@ def start():
     root = tk.Tk()
 
     root.lift()
+    root.attributes('-topmost', True)
     root.resizable(0, 0)
 
     root.title("Message...!!")
