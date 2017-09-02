@@ -14,10 +14,9 @@ Simple timer app to **take a break every 20 minutes for 20 seconds**
 
 ## Development
 
-
 ### Prerequisites
 
-- Your favurite editor viz. PyCharm, Vim, Sublime Text, etc.
+- Your favourite text editor viz. PyCharm, Vim, Sublime Text, etc.
 - Python 2.7 Release
 
 
