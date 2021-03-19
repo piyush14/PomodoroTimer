@@ -2,7 +2,7 @@ certifi==2017.7.27.1
 chardet==3.0.4
 configparser==3.5.0
 idna==2.6
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 pathlib2==2.3.0
 pynsist==1.12
